@@ -262,6 +262,13 @@
     .gear-info p {
       margin-bottom: 10px;
       color: var(--gray-700);
+      line-height: 1.5;
+    }
+
+    .gear-name {
+      display: inline-block;
+      font-weight: 900;
+      color: var(--gray-900);
     }
 
     .gear-info p:last-child {
@@ -269,6 +276,8 @@
     }
 
     .gear-note {
+      display: block;
+      margin-top: 2px;
       font-size: 0.85em;
       color: var(--gray-500);
     }
@@ -567,9 +576,9 @@
       <div class="gear-layout">
         <div class="gear-image-slot">设备图片位置（图片地址可自行替换）</div>
         <div class="gear-info">
-          <p>我们拥有尼康 Z30 一台，ZDX16-50 镜头一只 <span class="gear-note">（人像绝佳）</span>。</p>
-          <p>唯卓士 9mm f2.8 一只 <span class="gear-note">（超广广广）</span>。</p>
-          <p>和影石 Ace Pro 2 一台 <span class="gear-note">（徕卡影像）</span>。</p>
+          <p><span class="gear-name">尼康 Z30 + ZDX16-50 镜头</span><span class="gear-note">（人像绝佳）</span></p>
+          <p><span class="gear-name">唯卓士 9mm f2.8</span><span class="gear-note">（超广广广）</span></p>
+          <p><span class="gear-name">影石 Ace Pro 2</span><span class="gear-note">（徕卡影像）</span></p>
         </div>
       </div>
     </section>
