@@ -230,6 +230,49 @@
       font-weight: 600;
     }
 
+    .gear-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 18px;
+      align-items: stretch;
+      margin-top: 8px;
+    }
+
+    .gear-image-slot {
+      border: 2px dashed var(--blue-200);
+      border-radius: var(--radius-lg);
+      background: #f8fbff;
+      min-height: 240px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: var(--gray-500);
+      font-weight: 600;
+      padding: 14px;
+    }
+
+    .gear-info {
+      background: linear-gradient(180deg, #ffffff 0%, #f6faff 100%);
+      border: 1px solid #dbeafe;
+      border-radius: var(--radius-lg);
+      padding: 16px 18px;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .gear-info p {
+      margin-bottom: 10px;
+      color: var(--gray-700);
+    }
+
+    .gear-info p:last-child {
+      margin-bottom: 0;
+    }
+
+    .gear-note {
+      font-size: 0.85em;
+      color: var(--gray-500);
+    }
+
     .pricing-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -462,6 +505,10 @@
         grid-template-columns: 1fr;
       }
 
+      .gear-layout {
+        grid-template-columns: 1fr;
+      }
+
       .photo-card:nth-child(3) {
         grid-column: auto;
         max-width: 100%;
@@ -511,6 +558,18 @@
             <img src="https://r2.hhyyyy.cn/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260504223119_145_70.jpg" alt="校园树木与建筑" />
             <span>校园树木与建筑</span>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">我们的设备</h2>
+      <div class="gear-layout">
+        <div class="gear-image-slot">设备图片位置（图片地址可自行替换）</div>
+        <div class="gear-info">
+          <p>我们拥有尼康 Z30 一台，ZDX16-50 镜头一只 <span class="gear-note">（人像绝佳）</span>。</p>
+          <p>唯卓士 9mm f2.8 一只 <span class="gear-note">（超广广广）</span>。</p>
+          <p>和影石 Ace Pro 2 一台 <span class="gear-note">（徕卡影像）</span>。</p>
         </div>
       </div>
     </section>
